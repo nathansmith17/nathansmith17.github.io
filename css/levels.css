@@ -1,0 +1,11 @@
+.container {
+    height: 100%;
+    display: grid;
+    font: 1em sans-serif;
+    grid-template-areas: "header header header header " "nav nav nav nav" ". main aside ." "footer footer footer footer";
+    grid-template-columns: 70px auto 300px 70px;
+    grid-template-rows: 20% 10% 40% 30%;
+    justify-items: left;
+    margin: auto;
+    padding: 0;
+}
