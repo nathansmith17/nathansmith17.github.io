@@ -1,22 +1,42 @@
-.main {
-    display: grid;
-    grid-template-areas: "header header header header " "nav nav nav nav" ". main aside ." "footer footer footer footer";
-    grid-template-columns: 70px auto 300px 70px;
-    grid-template-rows: 80px 50px auto 100px;
-    justify-items: left;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+body {
+    margin: auto;
 }
 
 header {
+    display: flex;
     grid-area: header;
-    justify-items: center;
+    margin: auto;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+header h1 {
+    text-align: center;
 }
 
 nav {
+    background-color: grey;
+    width: 100%;
     grid-area: nav;
 }
 
 main {
+    padding: 30px;
     grid-area: main;
+    margin-bottom: 200px;
+}
+
+main p {
+    font: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 80%;
 }
 
 aside {
@@ -24,5 +44,77 @@ aside {
 }
 
 footer {
+    height: 50px;
+    width: 100%;
     grid-area: footer;
+    background-color: grey;
+    padding: 0;
+    margin: 0;
 }
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 19px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 19px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(0, 255, 157);
+}
+
+
+/* Dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 800px) {}
