@@ -9,3 +9,10 @@
     margin: auto;
     padding: 0;
 }
+
+.glossary {
+    padding-left: 20px;
+    padding-right: 40px;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 5px;
+}
