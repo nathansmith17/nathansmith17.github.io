@@ -2,6 +2,13 @@
 body {
     margin: auto;
     background-image: url("/img/grange.png");
+    background-size: cover;
+}
+
+ul {
+    font: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 80%;
 }
 
 header {
@@ -41,8 +48,18 @@ main p {
     width: 80%;
 }
 
+main a {
+    font: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 80%;
+    text-decoration: none;
+}
+
 aside {
     grid-area: aside;
+    font: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 80%;
     padding: 20px;
 }
 
@@ -51,11 +68,14 @@ footer {
     width: 100%;
     grid-area: footer;
     background-color: lightgray;
+    margin: auto;
+    text-align: left;
+    z-index: 2;
 }
 
 footer a {
     justify-content: center;
-    padding-left: 200px;
+    padding-left: 150px;
     text-align: center;
     text-decoration: none;
 }
